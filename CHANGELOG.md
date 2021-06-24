@@ -1,5 +1,27 @@
 # edge-react-gui
 
+## 2.0.14 (2021-06-24)
+
+- Only allow for one FIO expired pop-up per login
+- Show required amount when there isn't sufficient parent currency to pay token transaction fee
+- Fix token wallet loading on first login on new device
+- Fix recorded timestamp on FIO transactions
+- Fix incorrect recorded denomination in swap details
+- Logs and CSV Export TXs show which device was used to send the transaction
+- Update partner descriptions
+- Various visual enhancements
+- Update translations
+- Upgrade edge-core-js to 0.18.2
+  - Save the device description on sent transactions
+  - Add an optional InsufficientFundsError.networkFee field
+  - Avoid performing back-to-back initial syncs
+- Upgrade edge-currency-accountbased to 0.7.63
+  - Add native fee amount to InsufficientFundsError
+  - FIO: Fixed timestamps in get_actions
+- Upgrade edge-login-ui-rn to 0.9.8
+  - rn: Fix Change Recovery Questions modal on large screens
+  - rn: Update translations
+
 ## 2.0.13 (2021-06-14)
 
 - Queue wallet loading to improve GUI performance
